@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de Maquiagem Dani Secco - Produtos de alta qualidade para realçar sua beleza.">
+    <title>Dani Secco - Maquiagem Profissional</title>
+    <link rel="stylesheet" href="css/projeto.css">
+    <style>
+         div.banner img{
+            width: 45%;
+         }
+            div.banner h2{
+                width: 10%;
+            } 
+
+       section .contato {
+            background-color: white;
+        }
+
+     section .sobre {
+            background-color: white;
+            
+        }
+
+        h2{
+        	text-align: center;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ddc4bf;
+        }
+
+        header {
+            background-color: #e9967a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #e2a696;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #e9815e;
+            border-radius: 5px;
+        }
+
+        .banner {
+            background-image: url('banner.jpg');
+            background-size: cover;
+            height: 300px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+        }
+
+        section {
+            padding: 40px;
+            background-color: white;
+
+
+        }
+
+        .produtos, .sobre, .contato {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .sobre, .contato {
+            background-color: #e2a696;
+            padding: 20px;
+            border-radius: 8px;
+            width: 26%;
+            text-align: center;
+        }
+
+         .produto {
+            background-color: #e2a696;
+            padding: 20px;
+            border-radius: 8px;
+            width: 22%;
+            text-align: center;
+
+        }
+
+        .produtos {
+            margin-left: 17%;
+            margin-right: 17%;
+        }
+
+        .produto img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #e9967a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        #contato {
+    text-align: center;
+}
+
+.contato {
+    display: inline-block;
+    text-align: left;
+}
+ 
+
+#sobre {
+    text-align: center;
+}
+
+.sobre-container {
+    margin-left: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin: 0 auto;
+}
+
+.sobre {
+    background-color: white;
+    max-width: 600px; 
+    text-align: left;
+}
+
+.imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer button {
+    background-color: #e9815e;
+    color: white;
+    border: none;
+    padding: 4px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1px;
+}
+
+@media screen and (max-width: 1100px)
+{
+    .sobre, .contato {           
+         width: 100%;  
+        }
+     .produto {
+           
+            width: 100%;
+        }
+     .produtos {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        div.banner img{
+             transform: rotate(90deg);
+         }
+         #foto2 {
+            
+            transform: rotate(270deg);
+         }
+         h2 {
+            font-size: 30px;
+
+         }
+
+
+}
+
+    </style>
+</head>
+
+<body>
+
+  
+
+    <header><br>
+
+    	<img src="imagens/A.png" width="200PX"><br><br>
+        <h1>Maquiadora Profissional</h1>
+    </header>
+
+    <nav>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+   <br>
+    <div class="banner">
+        <img src="imagens/T1.png" width="100%">
+        <h2>Realce sua beleza com Dani Secco</h2>
+        <img id="foto2" src="imagens/T2.png" width="100%">
+    </div>
+    <BR>
+
+    <section id="produtos">
+        <h2>Produtos</h2><br>
+        <div class="produtos">
+            <div class="produto">
+
+                <img src="imagens/S1.jfif" width="100%" alt="Base Hidratante">
+                <h3>Base Hidratante</h3>
+                <p>Perfeita para todos os tipos de pele. Cobertura impecável e duradoura.</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/b2.jpg" width="100%" alt="Paleta de Sombras">
+                <h3>Paleta de Sombras</h3>
+                <p>Sombras com alta pigmentação para todos os estilos de maquiagem.</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/b1.jpg" width="100%" alt="Lábios Perfeitos">
+                <h3>Lábios Perfeitos</h3>
+                <p>Gloss e batons de longa duração em diversas cores vibrantes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+    <h1>Quem é Dani Secco?</h1><br>
+    <div class="sobre-container">
+        <div class="sobre">
+            <p><big>Dani Secco é uma maquiadora apaixonada por realçar a beleza única de cada pessoa, oferecendo um atendimento personalizado para todas as idades, de 15 a 80 anos. Seu objetivo é fazer com que cada cliente se sinta especial, confiante e empoderada através da maquiagem, seja para momentos do dia a dia ou ocasiões especiais. Dani vê a maquiagem como uma forma de expressão e autoestima, criando looks que destacam a verdadeira essência de cada indivíduo. Se você busca se sentir única e deslumbrante, Dani Secco é a profissional certa para realçar sua beleza e confiança.</p>
+        </div>
+        <div class="imagem">
+            <img src="imagens/A4.png" width="100%">
+        </div>
+    </div>
+</section>
+
+
+       
+
+    </section>
+
+    <section id="contato">
+        <h2>Entre em contato</h2><br>
+        <div class="contato">
+            <p>Email: <a href="mailto:contato@danisecco.com">contato@danisecco.com</a></p>
+            <p>Telefone: (99) 99999-9999</p>
+            <p>Endereço: Fisica zona sul de Sp - Capão Redondo - proximo ao metro.</p>
+            <p>Atendimento à domicílio</p>
+        </div>
+    </section>
+
+    <br><br><br><br>
+
+    
+
+
+
+<footer>
+    <p>&copy; 2025 Dani Secco. Todos os direitos reservados.</p>
+    <button onclick="window.scrollTo(0, 0);">Voltar ao topo</button>
+</footer>
+
+</body>
+</html>
